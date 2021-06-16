@@ -9,12 +9,15 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	int i, j, tmp, jLowest;
+	size_t i, j, tmp, jLowest;
 
-	for (i = 0; i < (int)(size - 1); i++)
+	if (!array)
+		return;
+
+	for (i = 0; i < (size - 1); i++)
 	{
 		jLowest = i;
-		for (j = i + 1; j < (int)size; j++)
+		for (j = (i + 1); j < size; j++)
 		{
 			if (array[jLowest] > array[j])
 				jLowest = j;
