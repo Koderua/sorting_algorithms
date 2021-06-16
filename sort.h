@@ -30,6 +30,9 @@ void swap(listint_t **list, listint_t *head);
 void swap_at_head(listint_t **head, listint_t *start_node,
 listint_t *swap_node);
 
+/* Selection sort*/
+void selection_sort(int *array, size_t size);
+
 /* Quicksort algorithm methods */
 void quick_sort(int *array, size_t size);
 void quicksort(int *array, int low, int high, size_t size);
