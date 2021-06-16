@@ -18,7 +18,7 @@ return;
 n = size;
 while (n > 0)
 {
-n1 = 0
+n1 = 0;
 for (i = 0; i < n - 1; i++)
 {
 if (array[i] > array[i + 1])
